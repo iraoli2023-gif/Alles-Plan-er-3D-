@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "VoltCAD 3D - Elektro & SmartHome Planer",
+  "short_name": "VoltCAD 3D",
+  "description": "3D CAD Wohnung, Möbel, Elektroplanung, Verlegepläne, Schaltkasten-Bestückung, Smart Home & Terrarium Steuerung.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

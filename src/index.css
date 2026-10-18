@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Touch manipulation & ergonomics for iPad Safari & iPadOS PWA */
+html, body {
+  touch-action: manipulation;
+  overscroll-behavior: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #020617; /* slate-950 */
+}
+
+/* 3D Canvas element touch isolation */
+canvas {
+  touch-action: none;
+}
+
+/* Custom smooth scrollbar for iPad touch panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.45);
+}
+
+@keyframes flowDash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.animate-flowDash {
+  animation: flowDash 1.2s linear infinite;
+}
+
+/* iPad Safe Area utility classes */
+.pt-safe {
+  padding-top: max(env(safe-area-inset-top, 0px), 0.5rem);
+}
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 0.75rem);
+}
+.pl-safe {
+  padding-left: max(env(safe-area-inset-left, 0px), 0.5rem);
+}
+.pr-safe {
+  padding-right: max(env(safe-area-inset-right, 0px), 0.5rem);
+}
+
+/* iPad Touch Target minimum guideline (44px x 44px) */
+.touch-target-min {
+  min-width: 44px;
+  min-height: 44px;
+}
+

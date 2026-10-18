@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix VoltCAD 3D - Elektro \u0026 SmartHome Planer",
+  "description": "3D-CAD Wohnungsplaner mit Apple iPad Tablet-Version (Liquid Retina, Apple Pencil, .mobileconfig Profil & Xcode Projekt), mobiler Samsung Galaxy Version (One UI & S-Pen), Windows Desktop (.exe), Layer-Manager für Möbel & Elektro, DIN 18015 Leitungsberechnung, Mehrraum-Anbau & Google Drive Cloud-Sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
